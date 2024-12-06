@@ -1,0 +1,8 @@
+*
+!.gitignore
+!kitty/
+!nvim/
+!kitty/**
+!nvim/**
+!starship.toml
+!starship-plaintext.toml
