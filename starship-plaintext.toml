@@ -24,11 +24,18 @@ vimcmd_symbol = "[<](bold green)"
 tag_symbol = " tag "
 
 [git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
+conflicted = '[=$count](bold 220)'
+ahead = '[>$count](bold 192)'
+behind = '[<$count](bold 192)'
+diverged = '[<>$ahead_count-$behind_count](bold 161)'
+untracked = '[?$count](bold 45)'
+stashed = '[\$$count](bold 37)'
+modified = '[!$count](bold 172)'
+staged = "[+$count](bold 34)"
+renamed = "[r$count](bold 105)"
+deleted = "[x$count](bold 198)"
+format = "([$all_status$ahead_behind]($style) )"
+style = "bold red"
 
 [aws]
 symbol = "aws "
