@@ -70,7 +70,7 @@ stashed = '[\$$count](bold 37)'
 modified = '[!$count](bold 172)'
 staged = "[+$count](bold 34)"
 renamed = "[»$count](bold 105)"
-deleted = "[×$count](bold 124)"
+deleted = "[×$count](bold 198)"
 format = "([$all_status$ahead_behind]($style) )"
 style = "bold red"
 
