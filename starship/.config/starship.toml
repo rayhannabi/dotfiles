@@ -237,6 +237,9 @@ map_symbol = true
 disabled = false
 symbol = " "
 
+[jobs]
+disabled = true
+
 [custom.giturl]
 description = "Display symbol for remote git url"
 require_repo = true
