@@ -1,6 +1,6 @@
 return {
   {
-    "nim-treesitter/nvim-treesitter",
+    "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "bash",
@@ -40,5 +40,4 @@ return {
       })
     end,
   },
-  { import = "lazyvim.plugins.extras.lang.json" },
 }
