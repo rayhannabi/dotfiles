@@ -2,16 +2,14 @@ disableStartupPopups: true
 gui:
   spinner:
     frames:
-      - "⠋"
-      - "⠙"
-      - "⠹"
-      - "⠸"
-      - "⠼"
-      - "⠴"
-      - "⠦"
-      - "⠧"
-      - "⠇"
-      - "⠏"
+      - "⣾"
+      - "⣽"
+      - "⣻"
+      - "⢿"
+      - "⡿"
+      - "⣟"
+      - "⣯"
+      - "⣷"
     rate: 80
   nerdFontsVersion: "3"
   # Tokyonight-Night
