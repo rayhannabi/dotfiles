@@ -55,6 +55,9 @@ symbol = "  "
 [fennel]
 symbol = " "
 
+[fill]
+symbol = " "
+
 [fossil_branch]
 symbol = "  "
 
