@@ -1,0 +1,120 @@
+/* ~/.config/gtk-4.0/gtk.css */
+
+button.titlebutton,
+windowcontrols > button {
+  color: transparent;
+  min-width: 16px;
+  min-height: 16px;
+  -gtk-icon-size: 16px;
+}
+
+button.titlebutton:backdrop {
+  opacity: 0.5;
+}
+
+windowcontrols > button {
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 3px;
+}
+
+windowcontrols > button > image {
+  padding: 0;
+}
+
+.titlebar .right {
+  margin-right: 8px;
+}
+
+.titlebar .left {
+  margin-left: 8px;
+}
+
+windowcontrols.end {
+  margin-right: 8px;
+}
+
+windowcontrols.start {
+  margin-left: 8px;
+}
+
+windowcontrols > button.close:backdrop,
+windowcontrols > button.maximize:backdrop,
+windowcontrols > button.minimize:backdrop {
+  background-image: none;
+  background-color: #787878;
+}
+
+windowcontrols > button.close {
+  background-image: url("close.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.close:hover,
+windowcontrols > button.close:hover:backdrop {
+  background-image: url("close-hover.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.close:active,
+windowcontrols > button.close:active:backdrop {
+  background-image: url("close-press.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.maximize {
+  background-image: url("maximize.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.maximize:hover,
+windowcontrols > button.maximize:hover:backdrop {
+  background-image: url("maximize-hover.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.maximize:active,
+windowcontrols > button.maximize:active:backdrop {
+  background-image: url("maximize-press.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.fullscreen windowcontrols > button.maximize:hover,
+.maximized windowcontrols > button.maximize:hover {
+  background-image: url("maximize-hover.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.fullscreen windowcontrols > button.maximize:active,
+.maximized windowcontrols > button.maximize:active {
+  background-image: url("maximize-press.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.minimize {
+  background-image: url("minimize.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.minimize:hover,
+windowcontrols > button.minimize:hover:backdrop {
+  background-image: url("minimize-hover.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+windowcontrols > button.minimize:active,
+windowcontrols > button.minimize:active:backdrop {
+  background-image: url("minimize-press.svg");
+  background-position: center;
+  background-size: contain;
+}
