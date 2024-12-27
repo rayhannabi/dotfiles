@@ -22,13 +22,16 @@ This creates a symlink in the `~/.config/nvim/` directory.
 
 ## Programs
 
-- **Kitty** - [Website](https://sw.kovidgoyal.net/kitty/) | [Arch](https://archlinux.org/packages/extra/x86_64/kitty/)
-- **NeoVim** - [Website](https://neovim.io/), Distro: [LazyVim](https://github.com/LazyVim/LazyVim) | [Arch](https://archlinux.org/packages/extra/x86_64/neovim/)
-- **Starship** - [Website](https://starship.rs) | [Arch](https://archlinux.org/packages/extra/x86_64/starship/)
+- [Kitty](https://sw.kovidgoyal.net/kitty/)
+- [NeoVim](https://neovim.io/), Distro: [LazyVim](https://github.com/LazyVim/LazyVim)
+- [Starship](https://starship.rs)
+- [Ghostty](https://ghostty.org)
+- [LazyGit](https://github.com/jesseduffield/lazygit)
 
 ## Themes
 
-- [TokyoNight](https://github.com/folke/tokyonight.nvim) with _Night_ variant
+- [TokyoNight](https://github.com/folke/tokyonight.nvim) with _Night_ variant.
+- Default GTK Theme modification with macOS style traffic light window buttons.
 
 ## Fonts
 
