@@ -1,5 +1,11 @@
-font-family = "Iosevka Term"
+font-family = "Iosevka Nerd Font"
 theme = tokyonight
+
+# window settings
 window-padding-x = 8
 window-padding-y = 8
 window-padding-balance = true
+
+# gtk settings
+adw-toolbar-style = flat
+window-theme = ghostty

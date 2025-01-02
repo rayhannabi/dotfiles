@@ -35,5 +35,4 @@ This creates a symlink in the `~/.config/nvim/` directory.
 
 ## Fonts
 
-- Iosevka Term - [Website](https://typeof.net/Iosevka/) | [AUR](https://aur.archlinux.org/packages/ttf-iosevka-term)
-- Symbols Nerd Fonts - [Website](https://github.com/ryanoasis/nerd-fonts) | [AUR](https://archlinux.org/packages/extra/any/ttf-nerd-fonts-symbols/)
+- Iosevka Nerd Font
