@@ -19,6 +19,10 @@ $line_break\
 $character
 """
 
+[character]
+success_symbol = "[❱](bold green)"
+error_symbol = "[❱](bold red)"
+
 [aws]
 symbol = " "
 
@@ -201,10 +205,10 @@ symbol = "  "
 symbol = "  "
 
 [rlang]
-symbol = "󰟔  "
+symbol = "󰟔 "
 
 [ruby]
-symbol = "  "
+symbol = " "
 
 [rust]
 symbol = "󱘗 "
@@ -213,7 +217,7 @@ symbol = "󱘗 "
 symbol = " "
 
 [swift]
-symbol = "  "
+symbol = " "
 
 [zig]
 symbol = "  "
@@ -249,7 +253,7 @@ disabled = true
 description = "Display symbol for remote git url"
 require_repo = true
 when = true
-format = "($output  )"
+format = "($output )"
 shell = ["bash", "--noprofile", "--norc"]
 command = '''
 remote_url=$(git remote -v | awk '{print $2}')
