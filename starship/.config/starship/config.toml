@@ -79,7 +79,7 @@ format = "  [$time]($style) "
 [shell]
 disabled = false
 bash_indicator = ""
-zsh_indicator = ""
+zsh_indicator = "󰰶"
 fish_indicator = ""
 powershell_indicator = ""
 cmd_indicator = ""
