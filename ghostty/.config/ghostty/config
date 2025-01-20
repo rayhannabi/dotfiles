@@ -8,4 +8,4 @@ window-padding-balance = true
 
 # gtk settings
 adw-toolbar-style = flat
-window-theme = ghostty
+window-theme = dark
