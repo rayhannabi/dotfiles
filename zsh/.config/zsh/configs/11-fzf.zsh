@@ -2,6 +2,7 @@
 #
 # FZF
 #
+
 FZF_COLORS="bg:-1,\
 bg+:-1,\
 fg:gray,\

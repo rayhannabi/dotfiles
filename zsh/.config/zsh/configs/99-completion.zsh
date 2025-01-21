@@ -8,6 +8,7 @@ fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
 zmodload zsh/complist 
 
 autoload -Uz compinit; compinit
+autoload -Uz bashcompinit; bashcompinit
 _cmp_options+=(globdots)
 
 setopt MENU_COMPLETE
@@ -54,5 +55,4 @@ zstyle ':completion:*' keep-prefix true
 
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
-autoload -U bashcompinit; bashcompinit
 
