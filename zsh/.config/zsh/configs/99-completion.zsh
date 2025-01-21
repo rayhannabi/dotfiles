@@ -3,9 +3,11 @@
 # Completion
 #
 
+fpath=($ZDOTDIR/plugins/zsh-completions/src $fpath)
+
 zmodload zsh/complist 
 
-autoload -U compinit; compinit
+autoload -Uz compinit; compinit
 _cmp_options+=(globdots)
 
 setopt MENU_COMPLETE
@@ -32,7 +34,7 @@ zstyle ':completion:*' complete-options true
 zstyle ':completion:*' file-sort modification
 zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
 zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}-- %D %d --%f'
-zstyle ':completion:*:*:*:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:*:*:*:messages' format ' %F{purple}-- %d --%f'
 zstyle ':completion:*:*:*:*:warnings' format ' %F{red}-- no matches found --%f'
 
 # Colors for files and directory
@@ -53,3 +55,4 @@ zstyle ':completion:*' keep-prefix true
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
 autoload -U bashcompinit; bashcompinit
+

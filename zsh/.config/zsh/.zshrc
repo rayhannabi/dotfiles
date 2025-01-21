@@ -12,3 +12,7 @@ for file in $ZSH_CONFIGS/*; do
   [[ -f "$file" ]] && source "$file"
 done
 
+# Plugins
+
+source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # This should only be sourced at the end.
