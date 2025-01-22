@@ -18,3 +18,24 @@ export VISUAL=nvim
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Paths
+
+## Android
+export ANDROID_HOME="$HOME/Android/Sdk/"
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+## Java
+if os_is_darwin; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
+else
+  export JAVA_HOME="/usr/lib/jvm/default"
+fi
+export PATH=$PATH:$JAVA_HOME/bin
+
+## Rust cargo
+export PATH=$PATH:$HOME/.cargo/bin

@@ -27,22 +27,7 @@ This creates a symlink in the `~/.config/nvim/` directory.
 - [Starship](https://starship.rs)
 - [Ghostty](https://ghostty.org)
 - [LazyGit](https://github.com/jesseduffield/lazygit)
-- [ZSH](https://www.zsh.org/) / [FZF](https://github.com/junegunn/fzf) -
-To setup `zsh`, a `.zshenv` file must be inside the user's home directory and
-the `$ZDOTDIR` environment variable must be set. E.g. -
-
-```sh
-## $HOME/.zshenv
-
-# XDG Paths
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
-export XDG_CACHE_HOME="$HOME/.cache"
-
-# ZSH
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh" 
-```
+- [ZSH](https://www.zsh.org/) / [FZF](https://github.com/junegunn/fzf) - [README.md](/zsh/.config/zsh/README.md)
 
 ## Themes
 
