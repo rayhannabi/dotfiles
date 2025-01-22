@@ -33,10 +33,10 @@ zstyle ':completion:alias-expansion:*' completer _expand_alias
 zstyle ':completion:*' menu select
 zstyle ':completion:*' complete-options true
 zstyle ':completion:*' file-sort modification
-zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
-zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}-- %D %d --%f'
-zstyle ':completion:*:*:*:*:messages' format ' %F{purple}-- %d --%f'
-zstyle ':completion:*:*:*:*:warnings' format ' %F{red}-- no matches found --%f'
+zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}  %d (errors: %e)%f'
+zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}  %d%f'
+zstyle ':completion:*:*:*:*:messages' format ' %F{purple}  %d%f'
+zstyle ':completion:*:*:*:*:warnings' format ' %F{red}  no matches found%f'
 
 # Colors for files and directory
 zstyle ':completion:*:*:*:*:default' list-colors ${(s.:.)LS_COLORS}
