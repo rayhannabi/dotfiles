@@ -23,7 +23,8 @@ $character
 
 [os]
 disabled = false
-format = "[$symbol]($style)"
+format = "[$symbol]($style) |"
+style = "15"
 
 [os.symbols]
 Alpine = " "
@@ -92,10 +93,10 @@ symbol = " "
 [character]
 success_symbol = "[❱](bold green)"
 error_symbol = "[❱](bold red)"
-vimcmd_symbol = "[❰](bold blue)"
-vimcmd_visual_symbol = "[❰](bold yellow)"
-vimcmd_replace_symbol = "[❰](bold purple)"
-vimcmd_replace_one_symbol = "[❰](bold purple)"
+vimcmd_symbol = "[❰](bold green)"
+vimcmd_visual_symbol = "[❰](bold purple)"
+vimcmd_replace_symbol = "[❰](bold yellow)"
+vimcmd_replace_one_symbol = "[❰](bold yellow)"
 
 # Git
 
@@ -284,6 +285,24 @@ case "$remote_url" in
 esac
 echo -e $symbol
 '''
+
+[custom.xcode]
+description = "Displays Xcode icon"
+symbol = "󰣪 "
+format = "• [$symbol]($style)($output )"
+style = "33 bold"
+detect_files = ["Package.swift"]
+when = '''
+results=$(find . -maxdepth 1 -type d \
+  \( -name "*.xcworkspace" \
+  -o -name "*.xcodeproj" \) \
+)
+if echo $results | grep -q .; then
+  return
+fi
+exit 1
+'''
+command = 'xcodebuild -version | grep -E "^Xcode"'
 
 # Disabled
 [jobs]

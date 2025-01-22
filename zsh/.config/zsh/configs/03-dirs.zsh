@@ -28,7 +28,7 @@ mkcd() {
 
 d() {
   if [[ -n "$1" ]]; then
-    dirs = "$@"
+    dirs "$@"
   else
     dirs -v | head -n 10
   fi

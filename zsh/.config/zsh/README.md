@@ -52,5 +52,6 @@ To add a new config, create a file inside the *configs* directory.
 > To update these, run -
 >
 > ```sh
+> git submodule init
 > git submodule update --recursive
 > ```
