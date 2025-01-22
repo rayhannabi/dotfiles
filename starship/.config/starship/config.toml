@@ -23,7 +23,7 @@ $character
 
 [os]
 disabled = false
-format = "[$symbol]($style) |"
+format = "[$symbol]($style) ⸽"
 style = "15"
 
 [os.symbols]
@@ -84,7 +84,7 @@ zsh_indicator = "󰰶"
 fish_indicator = ""
 powershell_indicator = ""
 cmd_indicator = ""
-format = "[$indicator]($style) "
+format = "⸽ [$indicator]($style) "
 
 [shlvl]
 disabled = false
