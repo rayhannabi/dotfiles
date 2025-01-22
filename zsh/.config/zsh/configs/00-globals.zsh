@@ -12,11 +12,9 @@ export SAVEHIST=10000
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-
 # Editors
 export EDITOR=nvim
 export VISUAL=nvim
 
-# GPG 
+# GPG
 export GPG_TTY=$(tty)
-

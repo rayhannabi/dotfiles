@@ -23,8 +23,8 @@ private-ip() {
   }
 
   case "${1:-4}" in
-    4) ipv4 ;;
-    6) ipv6 ;;
-    *) echo -e "Invalid option $1.\nValid options:\n\t- '4' or <empty> for IPv4\n\t- '6' for IPv6" && false ;;
+  4) ipv4 ;;
+  6) ipv6 ;;
+  *) echo -e "Invalid option $1.\nValid options:\n\t- '4' or <empty> for IPv4\n\t- '6' for IPv6" && false ;;
   esac
 }
