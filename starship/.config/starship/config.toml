@@ -88,7 +88,7 @@ format = "[|](bright-black) [$indicator]($style) "
 
 [shlvl]
 disabled = false
-symbol = " "
+symbol = "▼"
 
 [character]
 success_symbol = "[❱](bold green)"
@@ -260,7 +260,7 @@ format = "• [$symbol($version )]($style)"
 description = "Display symbol for remote git url"
 require_repo = true
 when = true
-format = " $output"
+format = " $output "
 shell = ["bash", "--noprofile", "--norc"]
 command = '''
 remote_url=$(git remote -v | awk '{print $2}')

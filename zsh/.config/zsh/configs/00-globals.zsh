@@ -22,7 +22,7 @@ export GPG_TTY=$(tty)
 # Paths
 
 ## Android
-export ANDROID_HOME="$HOME/Android/Sdk/"
+export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -38,4 +38,6 @@ fi
 export PATH=$PATH:$JAVA_HOME/bin
 
 ## Rust cargo
-export PATH=$PATH:$HOME/.cargo/bin
+export RUSTUP_HOME=$XDG_CONFIG_HOME/rustup
+export CARGO_HOME=$XDG_CONFIG_HOME/cargo
+export PATH=$PATH:$CARGO_HOME/bin
