@@ -85,10 +85,12 @@ fish_indicator = ""
 powershell_indicator = ""
 cmd_indicator = ""
 format = "[|](bright-black) [$indicator]($style) "
+style = "white bold"
 
 [shlvl]
 disabled = false
-symbol = "▼"
+symbol = ""
+format = "[$shlvl$symbol]($style) "
 
 [character]
 success_symbol = "[❱](bold green)"
