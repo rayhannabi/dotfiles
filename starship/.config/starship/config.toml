@@ -17,6 +17,7 @@ $cmd_duration\
 $time\
 $shell\
 $shlvl\
+${custom.ssh}\
 $line_break\
 $character
 """
@@ -305,6 +306,18 @@ fi
 exit 1
 '''
 command = 'xcodebuild -version | grep -E "^Xcode"'
+
+[custom.ssh]
+description = "Displays SSH icon"
+symbol = " 󱘖 SSH "
+format = "[$symbol]($style)"
+style = "green bold"
+when = '''
+if [[ -n $SSH_CONNECTION ]]; then
+  return
+fi
+exit 1
+'''
 
 # Disabled
 [jobs]
