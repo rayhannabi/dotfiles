@@ -235,7 +235,7 @@ symbol = "󰟔 "
 format = "• [$symbol($version )]($style)"
 
 [ruby]
-symbol = " "
+symbol = "  "
 format = "• [$symbol($version )]($style)"
 
 [rust]
@@ -274,17 +274,17 @@ case "$remote_url" in
   *github*) 
     symbol="" ;;
   *gitlab*)
-    symbol="\033[38;5;202m󰮠\033[0m" ;;
+    symbol="󰮠" ;;
   *bitbucket*)
-    symbol="\033[38;5;026m\033[0m" ;;
+    symbol="" ;;
   *azure*)
-    symbol="\033[38;5;033m\033[0m" ;;
+    symbol="" ;;
   *aws*)
-    symbol="\033[38;5;208m\033[0m" ;;
+    symbol="" ;;
   *gitea*)
-    symbol="\033[38;5;077m\033[0m" ;;
+    symbol="" ;;
   *)
-    symbol="\033[38;5;209m󰊢\033[0m" ;;
+    symbol="󰊢" ;;
 esac
 echo -e $symbol
 '''
