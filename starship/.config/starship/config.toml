@@ -298,7 +298,8 @@ detect_files = ["Package.swift"]
 when = '''
 results=$(find . -maxdepth 1 -type d \
   \( -name "*.xcworkspace" \
-  -o -name "*.xcodeproj" \) \
+  -o -name "*.xcodeproj" \
+  -o -name "*.playground" \) \
 )
 if echo $results | grep -q .; then
   return
