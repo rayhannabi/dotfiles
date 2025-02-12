@@ -1,9 +1,9 @@
 # Rayhan's Dotfiles
 
-<p align="middle">
-  <img src="_screenshots/term-screenshot.png" width="49%" />
-  <img src="_screenshots/nvim-screenshot.png" width="49%" />
-</p>
+<img src="_screenshots/term-screenshot.png" alt="term screenshot" width="100%" />
+<img src="_screenshots/nvim-screenshot.png" alt="nvim screenshot" width="100%" />
+
+## Usage
 
 These configurations can be loaded via GNU [`stow`](https://www.gnu.org/software/stow/) command.
 
@@ -20,7 +20,7 @@ stow nvim
 
 This creates a symlink in the `~/.config/nvim/` directory.
 
-## Programs
+### Programs
 
 - [Kitty](https://sw.kovidgoyal.net/kitty/)
 - [NeoVim](https://neovim.io/), Distro: [LazyVim](https://github.com/LazyVim/LazyVim)
@@ -29,11 +29,12 @@ This creates a symlink in the `~/.config/nvim/` directory.
 - [LazyGit](https://github.com/jesseduffield/lazygit)
 - [ZSH](https://www.zsh.org/) / [FZF](https://github.com/junegunn/fzf) - [README.md](/zsh/.config/zsh/README.md)
 
-## Themes
+### Themes
 
 - [TokyoNight](https://github.com/folke/tokyonight.nvim) with _Night_ variant.
 - Default GTK Theme modification with macOS style traffic light window buttons.
 
-## Fonts
+### Fonts
 
-- Iosevka Nerd Font
+- [Victor Mono](https://github.com/rubjo/victor-mono)
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
