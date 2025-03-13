@@ -16,6 +16,9 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=nvim
 export VISUAL=nvim
 
+# Less
+export LESS='-R --mouse'
+
 # GPG
 export GPG_TTY=$(tty)
 

@@ -1,4 +1,10 @@
 disableStartupPopups: true
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --paging=never --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+
 gui:
   spinner:
     frames:
@@ -11,7 +17,9 @@ gui:
       - "⣯"
       - "⣷"
     rate: 80
+
   nerdFontsVersion: "3"
+
   # Tokyonight-Night
   theme:
     activeBorderColor:
