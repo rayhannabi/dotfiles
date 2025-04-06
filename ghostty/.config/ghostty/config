@@ -1,10 +1,11 @@
 font-family = "Victor Mono"
-theme = tokyonight
+font-style = "Medium"
+font-style-bold = "Bold"
+font-style-italic = "Medium Oblique"
+font-style-bold-italic = "Bold Oblique"
+font-feature = +ss02
 
-# window settings
-window-padding-x = 8
-window-padding-y = 8
-window-padding-balance = true
+theme = tokyonight
 
 # gtk settings
 adw-toolbar-style = flat
