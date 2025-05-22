@@ -9,6 +9,7 @@ return {
 
     formatters = {
       swift_format = {
+        command = "swift format",
         stdin = false,
         args = { "$FILENAME", "--in-place" },
       },
