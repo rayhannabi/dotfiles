@@ -1,10 +1,10 @@
 font-size = 15
-font-family = "Input Mono Condensed"
+font-family = "Input Mono Narrow"
 ## Input Mono styles
-font-style = "Regular"
-font-style-bold = "Medium"
-font-style-italic = "Regular Italic"
-font-style-bold-italic = "Medium Italic"
+# font-style = "Regular"
+# font-style-bold = "Medium"
+# font-style-italic = "Regular Italic"
+# font-style-bold-italic = "Medium Italic"
 ## Victor Mono styles
 # font-style = "Medium"
 # font-style-bold = "Bold"
