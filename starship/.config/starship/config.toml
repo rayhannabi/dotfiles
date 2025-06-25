@@ -113,9 +113,9 @@ tag_disabled = false
 
 [git_status]
 conflicted = '[=$count](bold 220)'
-ahead = '[⇡$count](bold 192)'
-behind = '[⇣$count](bold 192)'
-diverged = '[⇡$ahead_count⇣$behind_count](bold 208)'
+ahead = '[↑$count](bold 192)'
+behind = '[↓$count](bold 192)'
+diverged = '[↕↑$ahead_count↓$behind_count](bold 208)'
 untracked = '[?$count](bold 45)'
 stashed = '[\$$count](bold 37)'
 modified = '[!$count](bold 172)'
