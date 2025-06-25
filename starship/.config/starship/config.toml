@@ -235,7 +235,7 @@ symbol = "󰟔 "
 format = "• [$symbol($version )]($style)"
 
 [ruby]
-symbol = "  "
+symbol = " "
 format = "• [$symbol($version )]($style)"
 
 [rust]
@@ -247,7 +247,7 @@ symbol = " "
 format = "• [$symbol($version )]($style)"
 
 [swift]
-symbol = "  "
+symbol = " "
 format = "• [$symbol($version )]($style)"
 
 [zig]
@@ -263,7 +263,7 @@ format = "• [$symbol($version )]($style)"
 description = "Display symbol for remote git url"
 require_repo = true
 when = true
-format = "( $output )"
+format = "( $output)"
 shell = ["bash", "--noprofile", "--norc"]
 command = '''
 remote_url=$(git remote -v | awk '{print $2}')
@@ -283,6 +283,12 @@ case "$remote_url" in
     symbol="" ;;
   *gitea*)
     symbol="" ;;
+# Work git repo
+  *pijush*)
+    symbol="󰮠 " ;;
+  *repo.grameenphone*)
+    symbol=" " ;;
+# Catch-all
   *)
     symbol="󰊢" ;;
 esac
@@ -291,7 +297,7 @@ echo -e $symbol
 
 [custom.xcode]
 description = "Displays Xcode icon"
-symbol = "󰣪 "
+symbol = " "
 format = "• [$symbol]($style)($output )"
 style = "33 bold"
 detect_files = ["Package.swift"]
