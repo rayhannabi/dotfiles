@@ -1,21 +1,18 @@
 font-size = 15
-font-family = "Input Mono Narrow"
-## Input Mono styles
+font-family = "CommitMono"
 font-style = "Regular"
 font-style-bold = "Medium"
 font-style-italic = "Regular Italic"
 font-style-bold-italic = "Medium Italic"
-## Victor Mono styles
-# font-style = "Medium"
-# font-style-bold = "Bold"
-# font-style-italic = "Medium Oblique"
-# font-style-bold-italic = "Bold Oblique"
-# font-feature = +ss02
+font-feature = calt, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, liga
 
-theme = tokyonight
+adjust-cell-height = 10%
+
+theme = light:tokyonight-day, dark:tokyonight
+
+window-theme = dark
+window-padding-x = 16
+window-padding-y = 16
 
 # gtk settings
 adw-toolbar-style = flat
-window-theme = dark
-
-window-padding-x = 16

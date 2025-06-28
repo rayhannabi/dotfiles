@@ -39,8 +39,8 @@ Linux = " "
 Macos = " "
 NixOS = " "
 Raspbian = " "
-Redhat = " "
 RedHatEnterprise = " "
+Redhat = " "
 Ubuntu = " "
 Unknown = " "
 Windows = "󰍲 "
@@ -54,217 +54,211 @@ format = "@[$hostname]($style):"
 style = "bold 36"
 
 [directory]
-read_only = " 󰌾 "
 format = " [$path]($style)[$read_only]($read_only_style) "
+read_only = " 󰌾 "
 
 [fill]
 symbol = " "
 
 [status]
 disabled = false
-symbol = "󰅙 "
+format = "[$symbol$status]($style) "
+map_symbol = true
 not_executable_symbol = " "
 not_found_symbol = "󰍉 "
 sigint_symbol = " "
 signal_symbol = "󱠪 "
-map_symbol = true
-format = "[$symbol$status]($style) "
+symbol = "󰅙 "
 
 [cmd_duration]
-min_time = 10_000
 format = "∆t [$duration]($style) "
+min_time = 10_000
 
 [time]
 disabled = false
 format = "  [$time]($style) "
 
 [shell]
-disabled = false
 bash_indicator = ""
-zsh_indicator = "󰰶"
-fish_indicator = ""
-powershell_indicator = ""
 cmd_indicator = ""
+disabled = false
+fish_indicator = ""
 format = "[|](bright-black) [$indicator]($style) "
+powershell_indicator = ""
 style = "white bold"
+zsh_indicator = "󰰶"
 
 [shlvl]
 disabled = false
-symbol = ""
 format = "[$shlvl$symbol]($style) "
+symbol = "↓"
 
 [character]
-success_symbol = "[❱](bold green)"
 error_symbol = "[❱](bold red)"
+success_symbol = "[❱](bold green)"
+vimcmd_replace_one_symbol = "[❰](bold yellow)"
+vimcmd_replace_symbol = "[❰](bold yellow)"
 vimcmd_symbol = "[❰](bold green)"
 vimcmd_visual_symbol = "[❰](bold purple)"
-vimcmd_replace_symbol = "[❰](bold yellow)"
-vimcmd_replace_one_symbol = "[❰](bold yellow)"
 
 # Git
 
 [git_branch]
-symbol = " "
 format = "[$symbol$branch(:$remote_branch)]($style) "
+symbol = " "
 
 [git_commit]
-tag_symbol = "   "
 tag_disabled = false
+tag_symbol = "  "
 
 [git_status]
-conflicted = '[=$count](bold 220)'
 ahead = '[↑$count](bold 192)'
 behind = '[↓$count](bold 192)'
-diverged = '[↕↑$ahead_count↓$behind_count](bold 208)'
-untracked = '[?$count](bold 45)'
-stashed = '[\$$count](bold 37)'
-modified = '[!$count](bold 172)'
-staged = "[+$count](bold 34)"
-renamed = "[»$count](bold 105)"
+conflicted = '[=$count](bold 220)'
 deleted = "[×$count](bold 198)"
+diverged = '[↕↑$ahead_count↓$behind_count](bold 208)'
 format = "([$all_status$ahead_behind]($style) )"
-style = "bold red"
+modified = '[!$count](bold 172)'
+renamed = "[»$count](bold 105)"
+staged = "[+$count](bold 34)"
+stashed = '[\$$count](bold 37)'
+untracked = '[?$count](bold 45)'
 
 # Languages
 
 [package]
-symbol = "󰏗 "
 format = "• [$symbol$version]($style) "
+symbol = "󰏗 "
 
 [aws]
 symbol = "󰸏 "
 
 [buf]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [c]
-symbol = " "
 format = "• [$symbol($version(-$name) )]($style)"
+symbol = " "
 
 [conda]
-symbol = "  "
 format = "• [$symbol$environment]($style) "
+symbol = "  "
 
 [crystal]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [dart]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [docker_context]
-symbol = "  "
 format = "• [$symbol$context]($style) "
+symbol = "  "
 
 [elixir]
-symbol = " "
 format = "• [$symbol($version \\(OTP $otp_version\\) )]($style)"
+symbol = " "
 
 [elm]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [fennel]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [golang]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [haskell]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [haxe]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [java]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [julia]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [kotlin]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [lua]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [meson]
-symbol = "󰔷  "
 format = "• [$symbol$project]($style) "
+symbol = "󰔷  "
 
 [nim]
-symbol = "󰆥 "
 format = "• [$symbol($version )]($style)"
+symbol = "󰆥 "
 
 [nix_shell]
-symbol = "  "
 format = "• [$symbol$state( \\($name\\))]($style) "
+symbol = "  "
 
 [nodejs]
-symbol = "󰎙 "
 format = "• [$symbol($version )]($style)"
+symbol = "󰎙 "
 
 [ocaml]
-symbol = "  "
 format = "• [$symbol($version )(\\($switch_indicator$switch_name\\) )]($style)"
+symbol = "  "
 
 [perl]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [php]
-symbol = "󰌟  "
 format = "• [$symbol($version )]($style)"
+symbol = "󰌟  "
 
 [python]
-symbol = "  "
 format = "• [${symbol}${pyenv_prefix}(${version} )(\\($virtualenv\\) )]($style)"
+symbol = "  "
 
 [rlang]
-symbol = "󰟔 "
 format = "• [$symbol($version )]($style)"
+symbol = "󰟔 "
 
 [ruby]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [rust]
-symbol = "󱘗 "
 format = "• [$symbol($version )]($style)"
+symbol = "󱘗 "
 
 [scala]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [swift]
-symbol = " "
 format = "• [$symbol($version )]($style)"
+symbol = " "
 
 [zig]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 [gradle]
-symbol = "  "
 format = "• [$symbol($version )]($style)"
+symbol = "  "
 
 # Custom
 [custom.giturl]
-description = "Display symbol for remote git url"
-require_repo = true
-when = true
-format = "( $output)"
-shell = ["bash", "--noprofile", "--norc"]
 command = '''
 remote_url=$(git remote -v | awk '{print $2}')
 if [ -z "$remote_url" ]; then
@@ -294,13 +288,19 @@ case "$remote_url" in
 esac
 echo -e $symbol
 '''
+description = "Display symbol for remote git url"
+format = "( $output)"
+require_repo = true
+shell = ["bash", "--noprofile", "--norc"]
+when = true
 
 [custom.xcode]
+command = 'xcodebuild -version | grep -E "^Xcode"'
 description = "Displays Xcode icon"
-symbol = " "
+detect_files = ["Package.swift"]
 format = "• [$symbol]($style)($output )"
 style = "33 bold"
-detect_files = ["Package.swift"]
+symbol = " "
 when = '''
 results=$(find . -maxdepth 1 -type d \
   \( -name "*.xcworkspace" \
@@ -312,13 +312,12 @@ if echo $results | grep -q .; then
 fi
 exit 1
 '''
-command = 'xcodebuild -version | grep -E "^Xcode"'
 
 [custom.ssh]
 description = "Displays SSH icon"
-symbol = " 󱘖 SSH "
 format = "[$symbol]($style)"
 style = "green bold"
+symbol = " 󱘖 SSH "
 when = '''
 if [[ -n $SSH_CONNECTION ]]; then
   return
