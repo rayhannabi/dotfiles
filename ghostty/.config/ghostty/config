@@ -1,12 +1,4 @@
-font-size = 15
-font-family = "CommitMono"
-font-style = "Regular"
-font-style-bold = "Medium"
-font-style-italic = "Regular Italic"
-font-style-bold-italic = "Medium Italic"
-font-feature = calt, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09, liga
-
-adjust-cell-height = 10%
+config-file = font-commit-mono
 
 theme = light:tokyonight-day, dark:tokyonight
 
@@ -14,5 +6,4 @@ window-theme = dark
 window-padding-x = 16
 window-padding-y = 16
 
-# gtk settings
 adw-toolbar-style = flat
