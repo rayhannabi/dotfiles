@@ -5,8 +5,8 @@
 
 FZF_COLORS="bg:-1,\
 bg+:-1,\
-fg:gray,\
-fg+:bright-white,\
+fg:white,\
+fg+:yellow,\
 border:gray,\
 spinner:magenta,\
 hl:yellow,\

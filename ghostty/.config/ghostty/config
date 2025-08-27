@@ -1,6 +1,6 @@
 config-file = font-commit-mono
 
-theme = light:tokyonight-day, dark:tokyonight
+theme = tokyonight
 
 window-theme = dark
 window-padding-x = 16

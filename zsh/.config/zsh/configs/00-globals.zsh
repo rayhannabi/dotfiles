@@ -44,3 +44,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 export RUSTUP_HOME=$XDG_CONFIG_HOME/rustup
 export CARGO_HOME=$XDG_CONFIG_HOME/cargo
 export PATH=$PATH:$CARGO_HOME/bin
+
+## bat
+export BAT_THEME=TwoDark
