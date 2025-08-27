@@ -46,4 +46,4 @@ export CARGO_HOME=$XDG_CONFIG_HOME/cargo
 export PATH=$PATH:$CARGO_HOME/bin
 
 ## bat
-export BAT_THEME=TwoDark
+export BAT_THEME=OneHalfDark
