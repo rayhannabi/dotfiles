@@ -15,6 +15,7 @@ export LC_ALL=en_US.UTF-8
 # Editors
 export EDITOR=nvim
 export VISUAL=nvim
+export MANPAGER='nvim +Man!'
 
 # Less
 export LESS='-R --mouse'
