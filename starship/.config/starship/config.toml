@@ -76,7 +76,7 @@ min_time = 10_000
 
 [time]
 disabled = false
-format = " [|](bright-black) [$time]($style) "
+format = " [|](bright-black) [$time]($style)"
 
 [shell]
 bash_indicator = ""

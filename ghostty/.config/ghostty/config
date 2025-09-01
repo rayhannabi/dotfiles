@@ -1,5 +1,3 @@
-background-opacity = 0.95
-background-blur = true
 config-file = font-commit-mono
 
 theme = tokyonight
@@ -9,3 +7,4 @@ window-padding-x = 16
 window-padding-y = 16
 
 adw-toolbar-style = flat
+gtk-titlebar-hide-when-maximized = true
