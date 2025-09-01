@@ -6,19 +6,10 @@
 CONF="$XDG_CONFIG_HOME/starship/config.toml"
 CONF_ASCII="$XDG_CONFIG_HOME/starship/config-ascii.toml"
 
-if os_is_darwin; then
+if term_is_nice; then
   export STARSHIP_CONFIG=$CONF
-fi
-
-if os_is_linux; then
-  case $(tty) in
-  /dev/tty[0-9]*)
-    export STARSHIP_CONFIG=$CONF_ASCII
-    ;;
-  *)
-    export STARSHIP_CONFIG=$CONF_ASCII
-    ;;
-  esac
+else
+  export STARSHIP_CONFIG=$CONF_ASCII
 fi
 
 eval "$(starship init zsh)"

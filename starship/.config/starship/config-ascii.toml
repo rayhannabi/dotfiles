@@ -93,30 +93,30 @@ symbol = ' '
 
 [status]
 disabled = false
-format = '[\[$symbol$status(:$signal_name\($signal_number\))\]]($style) '
+format = '[\[$symbol$status(:$signal_name\($signal_number\))\]]($style)'
 symbol = '!'
 
 [cmd_duration]
-format = '[\[t:$duration\]]($style) '
+format = '[\[t:$duration\]]($style)'
 min_time = 10_000
 
 [time]
 disabled = false
-format = '[|](bright-black) [$time]($style)'
+format = ' [|](bright-black) [$time]($style)'
 
 [shell]
 bash_indicator = 'bash'
 cmd_indicator = 'cmd'
 disabled = false
 fish_indicator = 'fish'
-format = '[\[$indicator\]]($style)'
+format = ' [\[$indicator\]]($style)'
 powershell_indicator = 'psh'
 style = 'white'
 zsh_indicator = 'zsh'
 
 [shlvl]
 disabled = false
-format = '[\[$shlvl$symbol\]]($style) '
+format = '[\[$shlvl$symbol\]]($style)'
 style = "white"
 symbol = '↓'
 
@@ -305,15 +305,10 @@ exit 1
 
 [custom.ssh]
 description = 'Displays SSH icon'
-format = '[$symbol]($style)'
+format = '( [$symbol]($style))'
 style = 'green bold'
-symbol = ' [ssh]'
-when = '''
-if [[ -n $SSH_CONNECTION ]]; then
-  return
-fi
-exit 1
-'''
+symbol = '[ssh]'
+when = '[[ -n $SSH_CONNECTION ]]'
 
 # Disabled
 [jobs]

@@ -14,10 +14,10 @@ $all\
 $fill\
 $status\
 $cmd_duration\
-$time\
 $shell\
 $shlvl\
 ${custom.ssh}\
+$time\
 $line_break\
 $character
 """
@@ -62,35 +62,36 @@ symbol = " "
 
 [status]
 disabled = false
-format = "[$symbol$status]($style) "
+format = ' [$symbol$status( $signal_name\($signal_number\))]($style)'
 map_symbol = true
 not_executable_symbol = " "
-not_found_symbol = "󰍉 "
-sigint_symbol = " "
-signal_symbol = "󱠪 "
+not_found_symbol = " "
+sigint_symbol = "󰹆 "
+signal_symbol = " "
 symbol = "󰅙 "
 
 [cmd_duration]
-format = "∆t [$duration]($style) "
+format = " ∆t [$duration]($style)"
 min_time = 10_000
 
 [time]
 disabled = false
-format = "  [$time]($style) "
+format = " [|](bright-black) [$time]($style) "
 
 [shell]
 bash_indicator = ""
 cmd_indicator = ""
 disabled = false
 fish_indicator = ""
-format = "[|](bright-black) [$indicator]($style) "
+format = " [$indicator]($style)"
 powershell_indicator = ""
-style = "white bold"
-zsh_indicator = "󰰶"
+style = "white"
+zsh_indicator = "󰬡"
 
 [shlvl]
 disabled = false
-format = "[$shlvl$symbol]($style) "
+format = " [$shlvl$symbol]($style)"
+style = "white"
 symbol = "↓"
 
 [character]
@@ -143,19 +144,19 @@ symbol = " "
 
 [conda]
 format = "• [$symbol$environment]($style) "
-symbol = "  "
+symbol = " "
 
 [crystal]
 format = "• [$symbol($version )]($style)"
-symbol = "  "
+symbol = " "
 
 [dart]
 format = "• [$symbol($version )]($style)"
-symbol = "  "
+symbol = " "
 
 [docker_context]
 format = "• [$symbol$context]($style) "
-symbol = "  "
+symbol = " "
 
 [elixir]
 format = "• [$symbol($version \\(OTP $otp_version\\) )]($style)"
@@ -318,12 +319,7 @@ description = "Displays SSH icon"
 format = "[$symbol]($style)"
 style = "green bold"
 symbol = " 󱘖 SSH "
-when = '''
-if [[ -n $SSH_CONNECTION ]]; then
-  return
-fi
-exit 1
-'''
+when = '[[ -n $SSH_CONNECTION ]]'
 
 # Disabled
 [jobs]

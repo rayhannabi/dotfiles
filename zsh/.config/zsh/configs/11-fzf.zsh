@@ -18,14 +18,24 @@ prompt:blue,\
 hl+:red,\
 gutter:-1"
 
-export FZF_DEFAULT_OPTS="
+if term_is_nice; then
+  export FZF_DEFAULT_OPTS="
   --style=full \
   --layout=reverse \
   --prompt='󰍉 '\
   --pointer=' ' \
-  --marker=' ' \
+  --marker='✓ ' \
 	--color=$FZF_COLORS"
+else
+  export FZF_DEFAULT_OPTS="
+  --style=full \
+  --layout=reverse \
+  --prompt='? '\
+  --pointer='> ' \
+  --marker='+ ' \
+	--color=$FZF_COLORS"
+fi
 
 source <(fzf --zsh)
 
-alias fzfp="fzf --preview='fzf-preview.sh {}'"
+alias fzp="fzf --preview='fzf-preview.sh {}'"

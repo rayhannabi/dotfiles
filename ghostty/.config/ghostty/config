@@ -1,3 +1,5 @@
+background-opacity = 0.95
+background-blur = true
 config-file = font-commit-mono
 
 theme = tokyonight
