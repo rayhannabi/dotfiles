@@ -296,7 +296,9 @@ shell = ["bash", "--noprofile", "--norc"]
 when = true
 
 [custom.xcode]
-command = 'xcodebuild -version | grep -E "^Xcode"'
+command = '''
+xcodebuild -version | awk '/Xcode/{ver=$2} /Build/{build=$3} END{print ver "(" build ")"}'
+'''
 description = "Displays Xcode icon"
 detect_files = ["Package.swift"]
 format = "• [$symbol]($style)($output )"

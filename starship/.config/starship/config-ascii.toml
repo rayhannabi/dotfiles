@@ -285,10 +285,12 @@ format = '[\[$symbol:$version\]]($style)'
 symbol = 'Gradle'
 
 [custom.xcode]
-command = 'xcodebuild -version | grep -E "^Xcode"'
+command = '''
+xcodebuild -version | awk '/Xcode/{ver=$2} /Build/{build=$3} END{print "v" ver "(" build ")"}'
+'''
 description = 'Displays Xcode icon'
 detect_files = ['Package.swift']
-format = '\[[$symbol]($style)($output)\]'
+format = '\[[$symbol:]($style)($output)\]'
 style = '33 bold'
 symbol = 'Xcode'
 when = '''
