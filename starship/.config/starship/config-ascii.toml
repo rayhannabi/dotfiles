@@ -1,0 +1,326 @@
+# Starship ascii config
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+format = """
+$os\
+$username\
+$hostname\
+${custom.giturl}\
+$directory\
+$all\
+$fill\
+$status\
+$cmd_duration\
+$shell\
+$shlvl\
+${custom.ssh}\
+$time\
+$line_break\
+$character
+"""
+
+[os]
+disabled = false
+format = '[$symbol]($style)[|](bright-black)'
+style = '15'
+
+[os.symbols]
+AIX = 'aix '
+AlmaLinux = 'alma '
+Alpaquita = 'alq '
+Alpine = 'alp '
+Amazon = 'amz '
+Android = 'andr '
+Arch = 'Arch '
+Artix = 'atx '
+CentOS = 'cent '
+Debian = 'deb '
+DragonFly = 'dfbsd '
+Emscripten = 'emsc '
+EndeavourOS = 'ndev '
+Fedora = 'fed '
+FreeBSD = 'fbsd '
+Garuda = 'garu '
+Gentoo = 'gent '
+HardenedBSD = 'hbsd '
+Illumos = 'lum '
+Kali = 'kali '
+Linux = 'lnx '
+Mabox = 'mbox '
+Macos = 'macOS '
+Manjaro = 'mjo '
+Mariner = 'mrn '
+MidnightBSD = 'mid '
+Mint = 'mint '
+NetBSD = 'nbsd '
+NixOS = 'nix '
+OpenBSD = 'obsd '
+OpenCloudOS = 'ocos '
+OracleLinux = 'orac '
+Pop = 'pop '
+Raspbian = 'rasp '
+RedHatEnterprise = 'rhel '
+Redhat = 'rhl '
+Redox = 'redox '
+RockyLinux = 'rky '
+SUSE = 'suse '
+Solus = 'sol '
+Ubuntu = 'ubnt '
+Ultramarine = 'ultm '
+Unknown = 'unk '
+Void = 'void '
+Windows = 'win '
+openEuler = 'oeul '
+openSUSE = 'osuse '
+
+[username]
+format = ' [$user]($style)'
+style_user = 'bold 214'
+
+[hostname]
+format = '@[$hostname]($style):'
+style = 'bold 36'
+
+[directory]
+format = ' [$path]($style)[$read_only]($read_only_style) '
+read_only = ':[ro]'
+
+[fill]
+symbol = ' '
+
+[status]
+disabled = false
+format = '[\[$symbol$status(:$signal_name\($signal_number\))\]]($style) '
+symbol = '!'
+
+[cmd_duration]
+format = '[\[t:$duration\]]($style) '
+min_time = 10_000
+
+[time]
+disabled = false
+format = '[|](bright-black) [$time]($style)'
+
+[shell]
+bash_indicator = 'bash'
+cmd_indicator = 'cmd'
+disabled = false
+fish_indicator = 'fish'
+format = '[\[$indicator\]]($style)'
+powershell_indicator = 'psh'
+style = 'white'
+zsh_indicator = 'zsh'
+
+[shlvl]
+disabled = false
+format = '[\[$shlvl$symbol\]]($style) '
+style = "white"
+symbol = '↓'
+
+[character]
+error_symbol = '[>](bold red)'
+success_symbol = '[>](bold green)'
+vimcmd_replace_one_symbol = '[<](bold yellow)'
+vimcmd_replace_symbol = '[<](bold yellow)'
+vimcmd_symbol = '[<](bold green)'
+vimcmd_visual_symbol = '[<](bold purple)'
+
+# Git
+
+[git_branch]
+format = '[\[$branch(:$remote_branch)\]]($style) '
+
+[git_commit]
+tag_disabled = false
+tag_symbol = ' #'
+
+[git_status]
+ahead = '[↑$count](bold 192)'
+behind = '[↓$count](bold 192)'
+conflicted = '[=$count](bold 220)'
+deleted = '[x$count](bold 198)'
+diverged = '[↑$ahead_count↓$behind_count](bold 208)'
+format = '[\[$all_status$ahead_behind\]]($style) '
+modified = '[!$count](bold 172)'
+renamed = '[>>$count](bold 105)'
+staged = '[+$count](bold 34)'
+stashed = '[\$$count](bold 37)'
+style = "purple"
+untracked = '[?$count](bold 45)'
+
+# Languages
+
+[package]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Package'
+
+[aws]
+disabled = true
+
+[buf]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Buf'
+
+[c]
+format = '[\[$symbol:($version(-$name))\]]($style)'
+symbol = 'C'
+
+[conda]
+format = '[\[$symbol:$environment\]]($style) '
+symbol = 'Conda'
+
+[crystal]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Crystal'
+
+[dart]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Dart'
+
+[docker_context]
+format = '[\[$symbol:$context\]]($style) '
+symbol = 'Docker'
+
+[elixir]
+format = '[\[$symbol:$version;\\(OTP:$otp_version\\)\]]($style)'
+symbol = 'Elixir'
+
+[elm]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Elm'
+
+[fennel]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Fennel'
+
+[golang]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Golang'
+
+[haskell]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Haskell'
+
+[haxe]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Haxe'
+
+[java]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Java'
+
+[julia]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Julia'
+
+[kotlin]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Kotlin'
+
+[lua]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Lua'
+
+[meson]
+format = '[\[$symbol:$project\]]($style) '
+symbol = 'Meson'
+
+[nim]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Nim'
+
+[nix_shell]
+format = '[\[$symbol:$state(;\\($name\\))\]]($style) '
+symbol = 'Nix'
+
+[nodejs]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Node'
+
+[ocaml]
+format = '[\[$symbol:$version;(\\($switch_indicator$switch_name\\))\]]($style)'
+symbol = 'OCaml'
+
+[perl]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Perl'
+
+[php]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'PHP'
+
+[python]
+format = '[\[$symbol:${pyenv_prefix}(${version})(\\($virtualenv\\))\]]($style)'
+symbol = 'Python'
+
+[rlang]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'R'
+
+[ruby]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Ruby'
+
+[rust]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Rust'
+
+[scala]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Scala'
+
+[swift]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Swift'
+
+[zig]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Zig'
+
+[gradle]
+format = '[\[$symbol:$version\]]($style)'
+symbol = 'Gradle'
+
+[custom.xcode]
+command = 'xcodebuild -version | grep -E "^Xcode"'
+description = 'Displays Xcode icon'
+detect_files = ['Package.swift']
+format = '\[[$symbol]($style)($output)\]'
+style = '33 bold'
+symbol = 'Xcode'
+when = '''
+results=$(find . -maxdepth 1 -type d \
+  \( -name "*.xcworkspace" \
+  -o -name "*.xcodeproj" \
+  -o -name "*.playground" \) \
+)
+if echo $results | grep -q .; then
+  return
+fi
+exit 1
+'''
+
+[custom.ssh]
+description = 'Displays SSH icon'
+format = '[$symbol]($style)'
+style = 'green bold'
+symbol = ' [ssh]'
+when = '''
+if [[ -n $SSH_CONNECTION ]]; then
+  return
+fi
+exit 1
+'''
+
+# Disabled
+[jobs]
+disabled = true
+
+[battery]
+disabled = true
+
+[memory_usage]
+disabled = true
