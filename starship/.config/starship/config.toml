@@ -280,9 +280,9 @@ case "$remote_url" in
     symbol="" ;;
 # Work git repo
   *pijush*)
-    symbol="󰮠 " ;;
+    symbol="󰮠" ;;
   *repo.grameenphone*)
-    symbol=" " ;;
+    symbol="" ;;
 # Catch-all
   *)
     symbol="󰊢" ;;
@@ -290,7 +290,7 @@ esac
 echo -e $symbol
 '''
 description = "Display symbol for remote git url"
-format = "( $output)"
+format = "( $output )"
 require_repo = true
 shell = ["bash", "--noprofile", "--norc"]
 when = true
