@@ -9,3 +9,5 @@ alias zshcomp-rebuild="rm -f $ZDOTDIR/.zcompdump; compinit; bashcompinit"
 alias ls=eza
 alias l="ls -alh --icons=always --colour=auto --sort=type"
 alias lg=lazygit
+alias nv=nvim
+alias cd=z
