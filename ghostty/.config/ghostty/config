@@ -1,4 +1,4 @@
-config-file = font-commit-mono
+config-file = font-input-mono
 
 theme = tokyonight
 
@@ -11,3 +11,5 @@ background-opacity = 0.95
 
 adw-toolbar-style = flat
 gtk-titlebar-hide-when-maximized = true
+
+command = /opt/homebrew/bin/fish
