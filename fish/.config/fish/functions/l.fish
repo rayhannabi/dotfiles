@@ -1,3 +1,3 @@
-function l --wraps='ls -alh --icons=always --colour=auto --sort=type' --description 'alias l ls -alh --icons=always --colour=auto --sort=type'
-    ls -alh --icons=always --colour=auto --sort=type $argv
+function l --wraps='eza -alh --icons=always --color=auto --sort=type' --description 'alias l eza -alh --icons=always --color=auto --sort=type'
+    eza -alh --icons=always --color=auto --sort=type $argv
 end

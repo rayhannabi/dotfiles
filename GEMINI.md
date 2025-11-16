@@ -7,7 +7,7 @@ The overall aesthetic is based on the "Tokyonight" theme, which is used across m
 ## Key Technologies and Tools
 
 *   **Terminal:** Ghostty and Kitty
-*   **Shell:** Zsh, configured with `zsh-autosuggestions` and `zsh-syntax-highlighting`.
+*   **Shell:** Zsh and Fish, configured with `zsh-autosuggestions` and `zsh-syntax-highlighting`.
 *   **Prompt:** Starship, a highly customizable cross-shell prompt.
 *   **Editor:** Neovim, using the LazyVim distribution for a modern and feature-rich setup.
 *   **Git UI:** Lazygit, a terminal-based UI for Git.
@@ -33,4 +33,4 @@ This will create a symbolic link from `nvim/.config/nvim` in this repository to 
 
 *   **Structure:** Each tool's configuration is contained within its own directory at the root of the repository. This makes it easy to manage and `stow` each configuration independently.
 *   **Theming:** The "Tokyonight" theme is used consistently across different tools to provide a unified visual experience.
-*   **Modularity:** The Zsh configuration is broken down into smaller, modular files for functions, configurations, and plugins, which are then sourced from the main `.zshrc` file. This makes it easier to manage and debug the shell setup.
+*   **Modularity:** The Zsh and Fish configurations are broken down into smaller, modular files for functions, configurations, and plugins, which are then sourced from the main `.zshrc` or `config.fish` file. This makes it easier to manage and debug the shell setup.

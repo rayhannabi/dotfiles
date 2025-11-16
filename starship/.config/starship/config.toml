@@ -17,7 +17,6 @@ $git_status\
 $fill\
 $cmd_duration\
 $time\
-${custom.ssh}\
 $line_break\
 $character
 """
@@ -82,10 +81,12 @@ symbol = "󰅙 "
 [cmd_duration]
 format = " [$duration]($style) [•](bright-black) "
 min_time = 10_000
+style = "yellow"
 
 [time]
 disabled = false
 format = "[$time]($style)"
+style = "bold yellow"
 
 [shell]
 bash_indicator = " "
@@ -94,7 +95,7 @@ disabled = false
 fish_indicator = " "
 format = "[$indicator]($style)"
 powershell_indicator = ""
-style = "white"
+style = "green"
 zsh_indicator = "zsh"
 
 [shlvl]
@@ -349,14 +350,6 @@ results=$(find . -maxdepth 1 -type d \
 )
 echo $results | grep .
 '''
-
-[custom.ssh]
-description = "Displays SSH icon"
-format = " [$symbol]($style) "
-shell = ["bash", "--noprofile", "--norc"]
-style = "green"
-symbol = "󱘖"
-when = '[[ -n $SSH_CONNECTION ]]'
 
 # Disabled
 [jobs]

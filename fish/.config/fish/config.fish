@@ -42,3 +42,8 @@ set -gx BAT_THEME OneHalfDark
 
 function fish_greeting
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/rayhan/.lmstudio/bin
+# End of LM Studio CLI section
+
