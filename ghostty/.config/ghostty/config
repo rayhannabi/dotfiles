@@ -1,3 +1,4 @@
+config-file = ?config.local
 config-file = font-input-mono
 
 theme = TokyoNight
@@ -11,4 +12,3 @@ background-opacity = 0.95
 
 adw-toolbar-style = flat
 
-command = /usr/bin/env fish
