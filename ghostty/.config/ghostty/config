@@ -1,6 +1,6 @@
 config-file = font-input-mono
 
-theme = tokyonight
+theme = TokyoNight
 
 window-theme = dark
 window-padding-x = 16
@@ -10,6 +10,5 @@ background-blur = true
 background-opacity = 0.95
 
 adw-toolbar-style = flat
-gtk-titlebar-hide-when-maximized = true
 
-command = /opt/homebrew/bin/fish
+command = /usr/bin/env fish

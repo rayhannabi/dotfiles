@@ -17,6 +17,7 @@ term_is_nice() {
     "$TERM_PROGRAM" == "vscode" ||
     "$TERM_PROGRAM" == "Apple_Terminal" ||
     "$TERM" == "xterm-kitty" ||
+    "$TERM" == "xterm-ghostty" ||
     "$TERM" == "alacritty" ||
     "$TERM" == "terminator" ||
     "$TERM" == "konsole" ||
