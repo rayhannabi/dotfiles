@@ -1,0 +1,4 @@
+# Ghostty keybindings configuration file
+#
+
+keybind = global:ctrl+grave_accent=toggle_quick_terminal

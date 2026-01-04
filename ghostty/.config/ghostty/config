@@ -1,4 +1,5 @@
 config-file = ?config.local
+config-file = keybindings
 config-file = font-input-mono
 
 theme = TokyoNight
@@ -12,3 +13,6 @@ background-opacity = 0.95
 
 adw-toolbar-style = flat
 
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
+macos-icon = glass
