@@ -46,7 +46,3 @@ end
 function new_line --on-event fish_postexec
     echo ""
 end
-
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/rayhan/.lmstudio/bin
-# End of LM Studio CLI section
