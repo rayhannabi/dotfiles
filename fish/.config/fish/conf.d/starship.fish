@@ -17,9 +17,4 @@ else
     set -gx STARSHIP_CONFIG $conf_ascii
 end
 
-function starship_transient_prompt_func
-    starship module character
-end
-
 starship init fish | source
-enable_transience

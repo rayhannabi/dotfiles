@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-function ip -d "Display your public and local IP addresses"
+function iplookup -d "Display your public and local IP addresses"
     function ip_local
         switch $argv[1]
             case 4 v4
