@@ -16,6 +16,9 @@ set -gx LESS '-R --mouse'
 set -gx GPG_TTY (tty)
 
 # Paths
+# Local bin
+set -gx PATH $PATH $HOME/.local/bin
+
 # Android
 set -gx ANDROID_HOME "$HOME/Android/Sdk"
 set -gx PATH $PATH "$ANDROID_HOME/platform-tools"
