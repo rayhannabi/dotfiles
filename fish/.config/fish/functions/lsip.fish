@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-function iplookup -d "Display your public and local IP addresses"
+function lsip -d "Display your public and local IP addresses"
     function ip_local
         switch $argv[1]
             case 4 v4
@@ -42,10 +42,6 @@ function iplookup -d "Display your public and local IP addresses"
         case public
             ip_public
         case "*"
-            if test (uname) = Darwin
-                echo "Usage: ip [local|public] [v4,4|v6,6|all]"
-            else
-                command ip $argv
-            end
+            echo "Usage: lsip [local|public] [v4,4|v6,6|all]"
     end
 end
