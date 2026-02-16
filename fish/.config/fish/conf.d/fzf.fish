@@ -43,7 +43,10 @@ set -gx FZF_DEFAULT_OPTS "--style full
 --preview '$preview {}'
 --bind 'ctrl-e:become(nvim {+})'
 --bind 'ctrl-o:become(bat {+})'
---bind 'ctrl-/:change-preview-window(hidden|)'"
+--bind 'ctrl-y:execute(echo {} | pbcopy && echo Copied path to clipboard: {})+become(exit 0)'
+--bind 'ctrl-u:execute(cat {} | pbcopy && echo Copied contents to clipboard: {})+become(exit 0)'
+--bind 'ctrl-/:change-preview-window(hidden|)'
+--bind 'esc:become(exit 0)'"
 
 set -gx FZF_ALT_C_OPTS "
 --preview 'eza -T {}'
