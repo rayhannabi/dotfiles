@@ -74,7 +74,7 @@ symbol = " "
 
 [status]
 disabled = false
-format = '[$symbol$status(:$signal_name\($signal_number\))]($style) '
+format = '[$symbol$status]($style) '
 map_symbol = true
 not_executable_symbol = " "
 not_found_symbol = " "
