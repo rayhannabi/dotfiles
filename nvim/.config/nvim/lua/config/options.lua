@@ -7,3 +7,5 @@ vim.filetype.add({
     [".swift-format"] = "json",
   },
 })
+
+vim.opt.shell = "fish"
