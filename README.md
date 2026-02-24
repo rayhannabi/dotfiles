@@ -15,7 +15,7 @@ These configurations can be loaded via GNU [`stow`](https://www.gnu.org/software
 E.g.
 
 ```sh
-# Clone the repo
+# Clone the repo in your $HOME directory
 git clone https://github.com/rayhannabi/dotfiles
 # Navigate to the cloned repo
 cd dotfiles
@@ -32,15 +32,15 @@ This creates a symlink in the `~/.config/nvim/` directory.
 - [NeoVim](https://neovim.io/), Distro: [LazyVim](https://github.com/LazyVim/LazyVim)
 - [Starship](https://starship.rs)
 - [LazyGit](https://github.com/jesseduffield/lazygit)
-- [ZSH](https://www.zsh.org/) / [FZF](https://github.com/junegunn/fzf) - [README.md](/zsh/.config/zsh/README.md)
+- [FZF](https://github.com/junegunn/fzf)
+- [Fish](https://github.com/fish-shell/fish-shell)
+- [ZSH](https://www.zsh.org/) - [README.md](/zsh/.config/zsh/README.md)
 
 ## Themes
 
 - [TokyoNight](https://github.com/folke/tokyonight.nvim) with _Night_ variant.
-- Default GTK Theme modification with macOS style traffic light window buttons.
 
 ## Fonts
 
-- [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono)
-- [Input Mono](https://input.djr.com)
+- [Iosevka](https://github.com/b5invis/Iosevka)
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)

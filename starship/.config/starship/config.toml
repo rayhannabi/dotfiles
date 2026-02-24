@@ -338,10 +338,11 @@ shell = ["bash", "--noprofile", "--norc"]
 when = true
 
 [custom.xcode]
+os = "macos"
 command = '''
 xcodebuild -version | awk '/Xcode/{ver=$2} /Build/{build=$3} END{print ver "(" build ")"}'
 '''
-description = "Displays Xcode icon"
+description = "Displays Xcode version"
 detect_files = ["Package.swift"]
 format = " [$symbol]($style)( $output)"
 shell = ["bash", "--noprofile", "--norc"]
