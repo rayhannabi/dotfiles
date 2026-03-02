@@ -4,15 +4,9 @@
 
 set -l conf "$XDG_CONFIG_HOME/starship/config.toml"
 set -l conf_ascii "$XDG_CONFIG_HOME/starship/config-ascii.toml"
-set -l conf_jetpack "$XDG_CONFIG_HOME/starship/config-jetpack.toml"
 
 if niceterm
-    # check if $JETPACK is set to 1
-    if test -n "$JETPACK" -a "$JETPACK" -eq 1
-        set -gx STARSHIP_CONFIG $conf_jetpack
-    else
-        set -gx STARSHIP_CONFIG $conf
-    end
+    set -gx STARSHIP_CONFIG $conf
 else
     set -gx STARSHIP_CONFIG $conf_ascii
 end
