@@ -134,7 +134,7 @@ behind = '[↓$count](192)'
 conflicted = '[=$count](220)'
 deleted = "[×$count](red)"
 diverged = ' [↕↑$ahead_count↓$behind_count](208)'
-format = " [$all_status$ahead_behind]($style)"
+format = "[( $all_status$ahead_behind)]($style)"
 modified = '[!$count](172)'
 renamed = "[»$count](105)"
 staged = "[+$count](34)"
@@ -157,9 +157,13 @@ style = "blue"
 symbol = ""
 
 [c]
-format = " [$symbol( $version(-$name))]($style)"
+format = " [$symbol(($name:)$version)]($style)"
 style = "149"
-symbol = ""
+symbol = " "
+
+[cmake]
+symbol = " "
+format = " [$symbol($version)]($style)"
 
 [conda]
 format = " [$symbol( $environment)]($style) "
@@ -332,7 +336,7 @@ esac
 echo -e $symbol
 '''
 description = "Display symbol for remote git url"
-format = "[](bright-black)( $output)"
+format = "( [](bright-black) $output)"
 require_repo = true
 shell = ["bash", "--noprofile", "--norc"]
 when = true
