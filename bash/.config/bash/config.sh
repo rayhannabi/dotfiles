@@ -9,6 +9,14 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # Iterate over all files in config.d and source them
 for config_file in "$XDG_CONFIG_HOME/bash/config.d/"*.sh; do
     if [ -f "$config_file" ]; then
+        # shellcheck source=/dev/null
         . "$config_file"
+    fi
+done
+
+for completion_file in "$XDG_CONFIG_HOME/bash/completions/"*.sh; do
+    if [ -f "$completion_file" ]; then
+        # shellcheck source=/dev/null
+        . "$completion_file"
     fi
 done
