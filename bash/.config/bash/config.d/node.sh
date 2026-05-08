@@ -4,13 +4,13 @@
 
 eval "$(fnm env --use-on-cd --shell bash)"
 
-# pnpm
+# bun
 
-export PNPM_HOME="$HOME/.local/share/pnpm"
+export BUN_BIN_DIR="$HOME/.cache/.bun/bin"
 
-# check if pnpm home is in path
+# check if bun bin dir is in path
 # if not, add it to path
 case ":$PATH:" in
-*":$PNPM_HOME:"*) ;;
-*) export PATH="$PNPM_HOME:$PATH" ;;
+*":$BUN_BIN_DIR:"*) ;;
+*) export PATH="$BUN_BIN_DIR:$PATH" ;;
 esac

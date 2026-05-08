@@ -4,7 +4,7 @@
 #
 
 if niceterm
-    set -gx SUDO_PROMPT "🔒 [%u@%h] Password: "
+    set -gx SUDO_PROMPT "🔑 Password (%u@%h): "
 else
-    set -gx SUDO_PROMPT "[%u@%h] Password: "
+    set -gx SUDO_PROMPT "# Password (%u@%h):"
 end

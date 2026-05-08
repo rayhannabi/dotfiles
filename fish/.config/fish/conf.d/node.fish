@@ -4,12 +4,12 @@
 
 fnm env --use-on-cd --shell fish | source
 
-# pnpm
+# bun
 
-set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+set -gx BUN_BIN_DIR "$HOME/.cache/.bun/bin"
 
-# check if pnpm home is in path
+# check if bun bin dir is in path
 # if not, add it to path
-if not contains $PNPM_HOME $PATH
-    set -gx PATH $PNPM_HOME $PATH
+if not contains $BUN_BIN_DIR $PATH
+    set -gx PATH $BUN_BIN_DIR $PATH
 end
