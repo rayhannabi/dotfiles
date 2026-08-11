@@ -7,10 +7,10 @@ set -gx LC_ALL en_US.UTF-8
 # Editors
 set -gx EDITOR nvim
 set -gx VISUAL nvim
-set -gx MANPAGER 'nvim +Man!'
 
 # Less
 set -gx LESS '-R --mouse'
+set -gx MANPAGER 'bat -p -l man'
 
 # GPG
 set -gx GPG_TTY (tty)
