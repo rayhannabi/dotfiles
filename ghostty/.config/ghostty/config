@@ -1,6 +1,6 @@
-config-file = ?config.local
 config-file = keybindings
 config-file = font-input-mono
+config-file = ?config.local
 
 theme = TokyoNight
 
