@@ -1,4 +1,4 @@
-# 01-homebrew.nu
+# 00-homebrew.nu
 
 if ($nu.os-info | get name) == "macos" {
     use std/util "path add"

@@ -16,8 +16,12 @@ export def is-nice [] {
         "terminator"
         "konsole"
         "hyper"
+        "foot"
         "wezterm"
+        "rio"
         "xterm-256color"
+        "tmux-256color"
+        "screen-256color"
     ]
 
     (

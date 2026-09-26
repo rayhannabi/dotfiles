@@ -17,12 +17,16 @@ export def local [] {
 
 export def public [] {
     try { 
-        http get "https://ident.me/json"
+      http get "https://ident.me/json"
     } catch { 
-        http get -e "https://www.cloudflare.com/cdn-cgi/trace"
-        | lines 
-        | parse "{key}={value}"
-        | into record
+        try {
+            http get -e "https://www.cloudflare.com/cdn-cgi/trace"
+            | lines
+            | parse "{key}={value}"
+            | into record
+        } catch {
+          { error: "offline or connection failed" }
+        }
     }
 }
 

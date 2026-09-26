@@ -30,7 +30,9 @@ load-env {
 }
 
 # GPG
-$env.GPG_TTY = (tty)
+if (is-terminal --stdin) {
+    try { $env.GPG_TTY = (tty | str trim) }
+}
 
 # Conversions
 
