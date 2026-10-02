@@ -5,13 +5,14 @@ return {
       swift = { "swift_format" },
       zsh = { "shfmt" },
       sh = { "shfmt" },
+      nu = { "nufmt" },
     },
 
     formatters = {
       swift_format = {
-        command = "swift format",
+        command = "swift",
         stdin = false,
-        args = { "$FILENAME", "--in-place" },
+        args = { "format", "$FILENAME", "--in-place" },
       },
     },
   },
