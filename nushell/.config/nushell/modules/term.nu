@@ -1,7 +1,7 @@
 # term.nu
 
 export def is-nice [] {
-     let term_programs = [
+    let term_programs = [
         "ghostty"
         "kitty"
         "iTerm.app"

@@ -10,9 +10,9 @@ load-env {
 
 # XDG
 load-env {
-    XDG_CONFIG_HOME: ($env.HOME | path join .config)
-    XDG_DATA_HOME: ($env.HOME | path join .local/share)
-    XDG_STATE_HOME: ($env.HOME | path join .local/state)
+    XDG_CONFIG_HOME: ($env.HOME | path join .config), 
+    XDG_DATA_HOME: ($env.HOME | path join .local/share), 
+    XDG_STATE_HOME: ($env.HOME | path join .local/state), 
     XDG_CACHE_HOME: ($env.HOME | path join .cache)
 }
 
@@ -25,7 +25,7 @@ load-env {
 # Pagers
 load-env {
     PAGER: less
-    LESS: "-R --mouse"
+    LESS: "-R --mouse", 
     MANPAGER: "bat -p -l man"
 }
 
@@ -38,11 +38,19 @@ if (is-terminal --stdin) {
 
 $env.ENV_CONVERSIONS = {
     MANPATH: {
-        from_string: { |s| $s | split row (char esep) }
-        to_string: { |v| $v | str join (char esep) }
+        from_string: {|s|
+            $s | split row (char esep)
+        }
+        to_string: {|v|
+            $v | str join (char esep)
+        }
     }
     INFOPATH: {
-        from_string: { |s| $s | split row (char esep) }
-        to_string: { |v| $v | str join (char esep) }
+        from_string: {|s|
+            $s | split row (char esep)
+        }
+        to_string: {|v|
+            $v | str join (char esep)
+        }
     }
 }

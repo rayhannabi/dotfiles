@@ -12,7 +12,6 @@ source alias.nu
 use modules/setup *
 use modules/lsip
 use modules/term.nu
-
 use std/util "path add"
 
 path add ($env.HOME | path join .local/bin)

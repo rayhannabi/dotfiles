@@ -16,16 +16,16 @@ export def local [] {
 }
 
 export def public [] {
-    try { 
-      http get "https://ident.me/json"
-    } catch { 
+    try {
+        http get "https://ident.me/json"
+    } catch {
         try {
             http get -e "https://www.cloudflare.com/cdn-cgi/trace"
             | lines
             | parse "{key}={value}"
             | into record
         } catch {
-          { error: "offline or connection failed" }
+            {error: "offline or connection failed"}
         }
     }
 }
@@ -60,7 +60,7 @@ def "lsip macos" [] {
                 $row.body
                 | parse -r '(?m)^\s*inet\s+(?<address>\S+)'
                 | get -o 0.address
-            )
+            ), 
             ipv6: (
                 $row.body
                 | parse -r '(?m)^\s*inet6\s+(?<address>\S+)'

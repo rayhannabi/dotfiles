@@ -3,9 +3,9 @@
 use ../modules/term.nu
 
 let opts = if (term is-nice) {
-    {prompt:"󰍉 ", pointer: " ", marker: "✓ "}
+    {prompt: "󰍉 ", pointer: " ", marker: "✓ "}
 } else {
-    {prompt:"? ", pointer: "> ", marker: "+ "}
+    {prompt: "? ", pointer: "> ", marker: "+ "}
 }
 
 let preview = match ($nu.os-info | get name) {
@@ -29,7 +29,7 @@ let fzf_colors = {
     prompt: blue
     hl+: red
 }
-| items { |key, value| $"($key):($value)" }
+| items {|key, value| $"($key):($value)" }
 | str join ","
 
 let fzf_interface_opts = {
@@ -42,7 +42,7 @@ let fzf_interface_opts = {
     color: $"'($fzf_colors)'"
     preview: $"'($preview) {}'"
 }
-| items { |key, value| $"--($key) ($value)"}
+| items {|key, value| $"--($key) ($value)"}
 
 let fzf_keybindings = {
     ctrl-e: "become(nvim {+})"
@@ -52,7 +52,7 @@ let fzf_keybindings = {
     ctrl-/: "change-preview-window(hidden|)"
     esc: "become(exit 0)"
 }
-| items { |key, value| $"--bind '($key):($value)'" }
+| items {|key, value| $"--bind '($key):($value)'" }
 
 $env.FZF_DEFAULT_OPTS = [...$fzf_interface_opts, ...$fzf_keybindings] | str join " "
 $env.FZF_ALT_C_OPTS = "--preview 'eza -T {}' --bind 'ctrl-/:change-preview-window(hidden|)'"

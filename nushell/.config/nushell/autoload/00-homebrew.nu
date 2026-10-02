@@ -8,7 +8,7 @@ if ($nu.os-info | get name) == "macos" {
         HOMEBREW_REPOSITORY: /opt/homebrew
         HOMEBREW_PREFIX: /opt/homebrew
     }
-    
+
     path add /opt/homebrew/bin
     path add /opt/homebrew/sbin
 
