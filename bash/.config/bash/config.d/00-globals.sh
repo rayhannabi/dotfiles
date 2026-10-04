@@ -46,8 +46,14 @@ function _export_cargo_paths() {
     export PATH="$PATH:$CARGO_HOME/bin"
 }
 
+function _export_golang_path() {
+    export GOPATH="$HOME/.local/go"
+    export PATH="$PATH:$GOPATH/bin"
+}
+
 export PATH="$PATH:$HOME/.local/bin"
 
 _export_android_paths
 _export_java_paths
 _export_cargo_paths
+_export_golang_path

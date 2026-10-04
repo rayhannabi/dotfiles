@@ -10,6 +10,7 @@ $env.config = (
 source alias.nu
 
 use modules/setup *
+use modules/utils *
 use modules/lsip
 use modules/term.nu
 use std/util "path add"

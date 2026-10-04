@@ -35,9 +35,9 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 ## Java
 if os_is_darwin; then
-  export JAVA_HOME=$(/usr/libexec/java_home)
+	export JAVA_HOME=$(/usr/libexec/java_home)
 else
-  export JAVA_HOME="/usr/lib/jvm/default"
+	export JAVA_HOME="/usr/lib/jvm/default"
 fi
 export PATH=$PATH:$JAVA_HOME/bin
 
@@ -45,6 +45,10 @@ export PATH=$PATH:$JAVA_HOME/bin
 export RUSTUP_HOME=$XDG_CONFIG_HOME/rustup
 export CARGO_HOME=$XDG_CONFIG_HOME/cargo
 export PATH=$PATH:$CARGO_HOME/bin
+
+## Golang
+export GOPATH="$HOME/.local/go"
+export PATH="$PATH:$GOPATH/bin"
 
 ## bat
 export BAT_THEME=OneHalfDark
