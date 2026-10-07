@@ -8,4 +8,4 @@ vim.filetype.add({
   },
 })
 
-vim.opt.shell = "fish"
+vim.opt.shell = "nu"
