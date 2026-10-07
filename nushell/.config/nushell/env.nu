@@ -26,7 +26,8 @@ load-env {
 load-env {
     PAGER: less
     LESS: "-R --mouse", 
-    MANPAGER: "bat -p -l man"
+    MANPAGER: "bat -p -l man --strip-ansi auto"
+    BAT_THEME: "OneHalfDark"
 }
 
 # GPG
