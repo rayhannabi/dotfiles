@@ -9,20 +9,19 @@ $os\
 $username\
 $hostname\
 $directory\
-${custom.giturl}\
 $git_branch\
 $git_commit\
+${custom.giturl}\
 $git_status\
 ( [•](bright-black)$all)\
-$fill\
-$cmd_duration\
-$time\
 $line_break\
 $character
 """
 
 right_format = """
 $status\
+$cmd_duration\
+$time\
 $shell\
 $shlvl
 """
@@ -51,7 +50,7 @@ Unknown = ""
 Windows = "󰍲"
 
 [username]
-format = " [](bright-black) [$user]($style)"
+format = " [|](bright-black) [$user]($style)"
 show_always = false
 style_user = "yellow"
 
@@ -84,29 +83,29 @@ style = "red"
 symbol = "󰅙 "
 
 [cmd_duration]
-format = " [$duration]($style) [•](bright-black) "
+format = "[ $duration]($style) "
 min_time = 10_000
 style = "yellow"
 
 [time]
 disabled = false
-format = "[$time]($style)"
-style = "bold yellow"
+format = "[ $time]($style) "
+style = "bold green"
 
 [shell]
-bash_indicator = " "
-cmd_indicator = " "
+bash_indicator = ""
+cmd_indicator = ""
 disabled = false
-fish_indicator = "󰈺 "
+fish_indicator = "󰈺"
 format = "[$indicator]($style)"
-nu_indicator = " "
+nu_indicator = ""
 powershell_indicator = ""
 style = "green"
 zsh_indicator = "zsh"
 
 [shlvl]
 disabled = false
-format = '[\[$shlvl\]]($style)'
+format = ' [\[$shlvl\]]($style)'
 style = "white"
 
 [character]
@@ -120,7 +119,7 @@ vimcmd_visual_symbol = "[⌘](bold purple)"
 # Git
 
 [git_branch]
-format = " [$symbol$branch(:$remote_branch)]($style)"
+format = " [•](bright-black) [$symbol$branch(:$remote_branch)]($style)"
 style = "purple"
 symbol = " "
 
@@ -337,7 +336,7 @@ esac
 echo -e $symbol
 '''
 description = "Display symbol for remote git url"
-format = "( [](bright-black) $output)"
+format = "( $output)"
 require_repo = true
 shell = ["bash", "--noprofile", "--norc"]
 when = true
