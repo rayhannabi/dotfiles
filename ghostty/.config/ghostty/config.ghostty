@@ -2,6 +2,10 @@ config-file = keybindings
 config-file = font-jetbrains-mono
 config-file = ?config.local.ghostty
 
+cursor-style = block
+custom-shader = ~/.config/ghostty/shaders/cursor-sweep.glsl
+custom-shader-animation = true
+
 theme = TokyoNight
 
 window-theme = dark
