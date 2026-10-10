@@ -26,7 +26,7 @@ load-env {
 load-env {
     PAGER: less
     LESS: "-R --mouse", 
-    MANPAGER: "bat -p -l man --strip-ansi auto"
+    MANPAGER: "nvim +Man!"
     BAT_THEME: "OneHalfDark"
 }
 
