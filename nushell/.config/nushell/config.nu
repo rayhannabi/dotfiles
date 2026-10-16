@@ -1,6 +1,7 @@
 $env.NU_LIB_DIRS ++= [
     ($nu.config-path | path dirname | path join "modules")
 ]
+
 $env.config.show_banner = false
 
 $env.config = (
@@ -12,10 +13,14 @@ $env.config = (
 
 source alias.nu
 
+use std/util "path add"
 use modules/setup *
 use modules/utils *
 use modules/lsip
 use modules/term.nu
-use std/util "path add"
 
 path add ($env.HOME | path join .local/bin)
+
+# Theme
+use themes/tokyo-night.nu
+tokyo-night set color_config
