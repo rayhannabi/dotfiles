@@ -95,7 +95,7 @@ bash_indicator = ""
 cmd_indicator = ""
 disabled = false
 fish_indicator = "󰈺"
-format = "[ $indicator ]($style)"
+format = "[ $indicator]($style)"
 nu_indicator = ""
 powershell_indicator = ""
 style = "fg:black bg:green"
@@ -103,7 +103,7 @@ zsh_indicator = "zsh"
 
 [shlvl]
 disabled = false
-format = '[<$shlvl>]($style)'
+format = '[ <$shlvl>]($style)'
 style = "fg:black bg:green"
 
 [character]
