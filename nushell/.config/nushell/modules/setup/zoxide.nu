@@ -1,6 +1,6 @@
 # setup zoxide
 
-export-env { 
+export-env {
     $env.ZOXIDE_INTEGRATION_PATH = (
          $env.XDG_DATA_HOME 
         | path join nushell/vendor/autoload/zoxide-integration.nu

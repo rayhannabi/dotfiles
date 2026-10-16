@@ -8,11 +8,7 @@ let opts = if (term is-nice) {
     {prompt: "? ", pointer: "> ", marker: "+ "}
 }
 
-let preview = match ($nu.os-info | get name) {
-    macos => "fzf-preview.sh"
-    linux => "/usr/share/fzf/fzf-preview.sh"
-    _ => "fzf-preview.sh"
-}
+let preview = $nu.default-config-dir | path join scripts fzf-preview.nu
 
 let fzf_colors = {
     bg: -1

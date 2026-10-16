@@ -1,6 +1,6 @@
 # setup starship
 
-export-env { 
+export-env {
     $env.STARSHIP_INTEGRATION_PATH = (
          $env.XDG_DATA_HOME 
         | path join nushell/vendor/autoload/starship-integration.nu

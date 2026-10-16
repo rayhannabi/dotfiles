@@ -3,3 +3,4 @@ alias lg = lazygit
 alias l = eza -alh --icons=always --color=auto --sort=type
 alias ls = %ls -a
 alias tree = eza -T
+alias hexdump = hexdump -C
