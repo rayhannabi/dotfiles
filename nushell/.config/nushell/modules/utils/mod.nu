@@ -1,3 +1,6 @@
+export use mime.nu *
+export use preview.nu *
+
 export def ll [path?: path] {
     %ls -al ($path | default ".")
     | sort-by type name
@@ -10,3 +13,5 @@ export def lll [path?: path] {
     | sort-by type name
     | table -o
 }
+
+export alias p = preview
