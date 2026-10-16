@@ -1,5 +1,4 @@
 config-file = keybindings
-config-file = font-jetbrains-mono
 config-file = ?config.local.ghostty
 
 cursor-style = bar
