@@ -21,13 +21,13 @@ $character
 right_format = """
 $status\
 $cmd_duration\
-[](bright-black)$time$shell$shlvl[](green)
+[█](bright-black)$time$shell$shlvl[█](green)
 """
 
 [os]
 disabled = false
-format = "[](white)[$symbol ](fg:black bg:white)[](white)"
-style = "15"
+format = "[$symbol ]($style)"
+style = "bright-white"
 
 [os.symbols]
 Alpine = ""
@@ -48,7 +48,7 @@ Unknown = ""
 Windows = "󰍲"
 
 [username]
-format = " [|](bright-black) [$user]($style)"
+format = " [$user]($style)"
 show_always = false
 style_user = "yellow"
 
@@ -59,9 +59,9 @@ style = "green"
 
 [directory]
 before_repo_root_style = "bold cyan"
-format = " [](bright-black) [$path]($style)[$read_only]($read_only_style)"
+format = ": [$path]($style)[$read_only]($read_only_style)"
 read_only = " 󰌾 "
-repo_root_format = ' [](bright-black) [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)'
+repo_root_format = ': [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)'
 repo_root_style = "bold yellow"
 truncate_to_repo = false
 truncation_symbol = "../"
@@ -107,8 +107,8 @@ format = '[<$shlvl>]($style)'
 style = "fg:black bg:green"
 
 [character]
-error_symbol = "[](bold red)"
-success_symbol = "[](bold green)"
+error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold green)"
 vimcmd_replace_one_symbol = "[⌘](bold yellow)"
 vimcmd_replace_symbol = "[⌘](bold yellow)"
 vimcmd_symbol = "[⌘](bold blue)"
