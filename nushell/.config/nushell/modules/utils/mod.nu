@@ -1,5 +1,6 @@
 export use mime.nu *
 export use preview.nu *
+export alias p = preview
 
 export def ll [path?: path] {
     %ls -al ($path | default ".")
@@ -14,4 +15,13 @@ export def lll [path?: path] {
     | table -o
 }
 
-export alias p = preview
+export def uname [] {
+    %uname | {
+        kernel: $in.kernel-name?
+        release: $in.kernel-release
+        version: $in.kernel-version
+        arch: $in.machine
+        os: $in.operating-system
+        nodename: $in.nodename
+    }
+}
