@@ -21,7 +21,7 @@ $character
 right_format = """
 $status\
 $cmd_duration\
-[█](bright-black)$time$shell$shlvl[█](green)
+$time$shell$shlvl
 """
 
 [os]
@@ -48,7 +48,7 @@ Unknown = ""
 Windows = "󰍲"
 
 [username]
-format = " [$user]($style)"
+format = "[$user]($style)"
 show_always = false
 style_user = "yellow"
 
@@ -87,7 +87,7 @@ style = "yellow"
 
 [time]
 disabled = false
-format = "[ $time ]($style)"
+format = "[  $time ]($style)"
 style = "bold fg:white bg:bright-black"
 
 [shell]
@@ -95,16 +95,16 @@ bash_indicator = ""
 cmd_indicator = ""
 disabled = false
 fish_indicator = "󰈺"
-format = "[ $indicator]($style)"
+format = "[ $indicator ]($style)"
 nu_indicator = ""
 powershell_indicator = ""
-style = "fg:black bg:green"
+style = "fg:green bg:black"
 zsh_indicator = "zsh"
 
 [shlvl]
 disabled = false
-format = '[ <$shlvl>]($style)'
-style = "fg:black bg:green"
+format = '[+$shlvl ]($style)'
+style = "fg:green bg:black"
 
 [character]
 error_symbol = "[❯](bold red)"
