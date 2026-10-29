@@ -38,4 +38,4 @@ fi
 
 source <(fzf --zsh)
 
-alias fzp="fzf --preview='fzf-preview.sh {}'"
+alias fzp="fzf --preview='$ZDOTDIR/scripts/preview.sh {}'"

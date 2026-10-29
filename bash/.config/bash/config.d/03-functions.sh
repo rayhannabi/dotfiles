@@ -56,6 +56,10 @@ function lsip() {
     esac
 }
 
+function preview() {
+    "$XDG_CONFIG_HOME/bash/scripts/preview.sh" "$@"
+}
+
 function notify() {
     # Send a desktop notification
     local message="$1"

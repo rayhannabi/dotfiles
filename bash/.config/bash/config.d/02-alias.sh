@@ -6,6 +6,7 @@ alias ll='eza'
 alias tree='eza -T'
 alias lg='lazygit'
 alias v='nvim'
+alias p='preview'
 
 if [[ -x "$(command -v pbcopy)" ]]; then
     alias pbcopy='wl-copy'

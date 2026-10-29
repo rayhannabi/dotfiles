@@ -10,14 +10,7 @@ else
     marker='+ '
 fi
 
-case "$OS_KERNEL" in
-"Darwin")
-    preview='fzf-preview.sh'
-    ;;
-"Linux")
-    preview='/usr/share/fzf/fzf-preview.sh'
-    ;;
-esac
+preview="$XDG_CONFIG_HOME/bash/scripts/preview.sh"
 
 fzf_colors="bg:-1,bg+:-1,fg:white,fg+:yellow,border:gray,spinner:magenta,hl:yellow,header:blue,info:green,pointer:yellow,marker:green,prompt:blue,hl+:red"
 
